@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Column Layout with Background Image</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+
+  
+        html, body {
+          
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Define a container for the layout */
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden; /* Hide overflowing content */
+        }
+
+        /* Define styles for the left column */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            flex: 1; /* Take up 50% of the container's width */
+            padding: 20px; /* Background color for the left column */
+            margin-top: -20px;
+        }
+        
+        /* Define styles for the right column */
+        .right-column {
+            flex: 1; /* Take up 50% of the container's width */
+            background-image: url('https://www.andacademy.com/wp-content/themes/andacademy/pm/images/Grid-grid.png'); /* Replace with your image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .right-column {
+                background-size: cover;
+                height: 100%;
+            }
+
+        
+        /* Update styles for larger screens (MacBook) */
+        @media screen and (min-width: 1280px) and (max-width: 1440px) {
+            .container {
+                min-height: 100vh;
+                flex-direction: row; /* Display columns side by side */
+            }
+
+
+            .left-column,
+            .right-column {
+               margin-top: 10px; 
+                flex: 1;
+                padding: 0px;
+            }
+
+            .right-column {
+                
+                background-size: cover;
+                height: 90vh;
+            }
+      
+        }
+
+       
+ 
+
+        .rights{
+            margin-top: 20px;
+            height: 65vh;
+            width: 85%;
+            border: 30px solid #cdaeff;
+        }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 50px;
+            margin-left: 120px;
+            justify-content: left;
+        }
+
+        .button {
+            font-family:sans-serif;
+            background: #ae7bff;
+            color: #fff;
+            font-size: 17px;
+            text-transform: uppercase;
+            padding: 10px 0;
+            text-align: center;
+            line-height: 28px;
+            border: #ae7bff;
+            width: 190px;
+        }
+
+       
+        /* Define styles for the columns */
+        .containes {
+            display: flex; /* Use flexbox for the layout */
+            max-width: 800px; /* Set a maximum width for the container */
+            margin-left: 0px;
+        }
+
+        .colums {
+            flex: 1; /* Make the columns take equal space */
+            padding: 10px; /* Add some spacing inside each column */
+        }
+
+     .head{
+        margin-top: 11px;
+                        font-size: 17px;
+                        font-family:sans-serif;
+                        line-height: 20px;
+                        color: #535353;
+     }
+     @media screen and (min-width: 1440px) and (max-width: 3200px) {
+        .containes {
+            display: flex; /* Use flexbox for the layout */
+            max-width: 800px; /* Set a maximum width for the container */
+            margin-left: 0px;
+        }
+
+        .colums {
+            flex: 1; /* Make the columns take equal space */
+            padding: 20px; /* Add some spacing inside each column */
+        }
+         
+        .head{
+        margin-top: 11px;
+                        font-size: 19px;
+                        font-family:sans-serif;
+                        line-height: 25px;
+                        color: #535353;
+     }
+          .container {
+              min-height: 100vh;
+              flex-direction: row; /* Display columns side by side */
+          }
+         
+
+          .left-column,
+          .right-column {
+              
+             margin-top: 10px; 
+              flex: 1;
+              padding: 10px 10px 10px 0px;
+          }
+
+          .right-column {
+              background-size: cover;
+              height: 90vh;
+          }
+          
+      } 
+    </style>
+</head>
+<body>
+<div id="content">
+    <img style="margin-top: 10px;" src="https://andacademynew.quintero-solutions.com/temp-resources/wp-content/uploads/2023/09/Group-511-1.png" width="100%" height="auto"></div><br>
+ <div class="container">
+        
+        <div class="left-column">
+                
+               <h1 style=" font-size: 33px;
+               font-family:sans-serif;
+               text-transform: uppercase;
+               color: #CDAEFF;
+               background: #fff0;
+               line-height: 30px;">PART-TIME COURSES (STACKABLE)</h1>
+              
+                <div class="containes">
+                    <div class="colums left">
+                        <h1 style="margin-top: 20px; font-size: 35px;
+                        font-family:sans-serif;
+                        line-height: 25px;
+                        color: #6E1DED;
+                        ">Certificate</h1>
+                        <p style="margin-top: 20px;">16 Weeks Placement Support</p>
+                        <img style="margin-top: 30px;" src="./img/relpdesign/Group 512.png" height="15px" width="200px">
+                        <h1 style="margin-top: 40px; font-size: 35px;
+                        font-family:sans-serif;
+                        line-height: 25px;
+                        color: #6E1DED;
+                        ">Diploma</h1>
+                        <p style="margin-top: 20px;">32 Weeks Placement Support</p>
+                        <img style="margin-top: 30px;" src="./img/relpdesign/Group 513.png" height="15px" width="200px">
+                        <h1 style="margin-top: 50px; font-size: 35px;
+                        font-family:sans-serif;
+                        line-height: 25px;
+                        color: #6E1DED;
+                        ">PG Diploma</h1>
+                        <p style="font-size: 12px; margin-top: 10px;
+                        font-family: sans-serif;
+                        color: black;
+                        line-height: 25px;">1 Year<span style="color: black;">. </span><span style="font-size: 12px; background-color: #CDAEFF; border: 5px solid #CDAEFF; border-radius: 20px; color: white;">Job Guarantee</span> </p><br>
+                           <img style="margin-top: 20px;" src="./img/relpdesign/Group 514.png" height="15px" width="200px">
+                          </div>
+
+
+
+                    <div class="colums right">
+                      
+                        <p style="margin-top: 10px;" class="head">1. Fundamentals of Visual Design</p>
+                        <p style="padding-left: 20px; font-size: 15.5px;
+                        font-family:sans-serif;
+                        line-height: 17px;
+                        color: #a5a5a5;
+                        ">Project: Type-based poster</p>
+                        <p class="head">2. Design for Digital</p>
+                        <p style="padding-left: 20px; font-size: 15.5px;
+                        font-family:sans-serif;
+                        line-height: 17px;
+                        color: #a5a5a5;
+                        ">Project: Social media creatives</p>
+                        <p class="head">3. Design for Print</p>
+                        <p style="padding-left: 20px; font-size: 15.5px;
+                        font-family:sans-serif;
+                        line-height: 17px;
+                        color: #a5a5a5;
+                        ">Project: Print brochure</p>
+                        <p style="margin-top: 12px; font-size: 13px;
+                        font-family:sans-serif;
+                        line-height: 10px;
+                        color: #AE7BFF;
+                        ">Modules 1 to 3 - covered in Certificate course</p>
+                         <p class="head">4. Brand Identity Design</p>
+                         <p style="padding-left: 20px; font-size: 15.5px;
+                         font-family:sans-serif;
+                         line-height: 17px;
+                         color: #a5a5a5;
+                         ">Project: Brand logo</p>
+                          <p class="head">5. Brand Promotion & Communication</p>
+                          <p style="padding-left: 20px; font-size: 15.5px;
+                          font-family:sans-serif;
+                          line-height: 17px;
+                          color: #a5a5a5;
+                          ">Project: Social media narrative</p>
+                          <p class="head">6. Portfolio Development</p>
+                          <p style="margin-top: 12px; font-size: 13px;
+                        font-family:sans-serif;
+                        line-height: 17px;
+                        color: #AE7BFF;
+                        ">Modules 1-6 - covered in Certificate and Diploma courses</p>
+                           <p class="head">7. Visual Storytelling</p>
+                           <p style="padding-left: 20px; font-size: 15.5px;
+                           font-family:sans-serif;
+                           line-height: 17px;
+                           color: #a5a5a5;
+                           ">Project: Visual storytelling</p>
+                            <p class="head">8. Campaign / Event Branding</p>
+                            <p style="padding-left: 20px; font-size: 15.5px;
+                            font-family:sans-serif;
+                            line-height: 17px;
+                            color: #a5a5a5;
+                            ">Project: Brand manual & collaterals</p>
+                        
+                        <p class="head">9. Portfolio & Career Development</p>
+                        
+                    </div>
+                </div> 
+                    
+                <p style="margin-top: 8px; font-size: 16px;
+                font-family:sans-serif;
+                line-height: 25px;
+                color: #CDAEFF;
+                ">Software: Illustrator, Photoshop, InDesign, After Effects,XD, Premiere Pro, etc</p>    
+              <a href="ux.html"><img style="margin-top: 10px;" src="https://www.andacademy.com/wp-content/themes/andacademy/pm/images/Back-arrow.png" width="15px">
+              </a> 
+                
+           
+        </div>
+        <div class="right-column">
+            <img class="rights" src="https://www.andacademy.com/wp-content/themes/andacademy/pm/images/desktop-Project-2.jpg">
+            <!-- <div class="buttons">
+                <a href="studentjourney.html"> <button class="button">SEE STUDENT JOURNEY</button></a>
+                <a href="getbrochure.html"><button class="button">GET BROCHURE</button></a>
+             </div> -->
+             
+               
+           
+            <!-- Button to load a different page -->
+            <div class="buttons">
+                <button id="loadButton" class="button">SEE STUDENT WORK</button>
+                <button id="loadButton2" class="button">GET BROCHURE</button>
+            </div>
+        
+    </div>
+</div>
+        
+<script>
+    // Function to load and replace content
+    function loadPage(url) {
+        // Hide the previous content
+        $('#content').hide();
+        // Load new content
+        $.ajax({
+            url: url,
+            method: 'GET',
+            dataType: 'html',
+            success: function(data) {
+                // Replace the content and show it
+                $('#content').html(data).show();
+            },
+            error: function() {
+                alert('Error loading the page.');
+            }
+        });
+    }
+    // Attach a click event handler to the button
+    $('#loadButton').click(function() {
+        loadPage('studentwork.html'); // Change the URL to the desired page
+    });
+
+    $('#loadButton2').click(function() {
+        loadPage('getbrochure.html'); // Change the URL to the desired page
+    });
+</script>
+</body>
+</html>
